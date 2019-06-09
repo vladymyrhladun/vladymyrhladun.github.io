@@ -1,0 +1,165 @@
+html * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    font-family: Arial, serif, sans-Serif;
+}
+
+.inner-wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/*REQUIRED TASK SECTION*/
+.required-task{
+    height: 100vh;
+    padding-top: 5%;
+}
+.img-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.required-task p{
+    padding-top: 25px;
+    line-height: 1.5em;
+}
+
+.required-task p sub{
+    color: blue;
+}
+.first-img{
+    margin-right: 50px;
+}
+.second-img{
+    margin-right: 20px;
+}
+
+.green-color{
+    color: green;
+}
+.required-task i{
+    color:blue;
+    margin-right: 10px;
+}
+
+/*TRANSPERENT LETTERS SECTION*/
+.transperent-letters{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #000;
+}
+
+.transperent{
+    background: rgba(52, 50, 29, 0.9) url("http://www.playcast.ru/uploads/2018/10/15/25979001.gif")no-repeat center;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    transition: .3s;
+    background-size: 100%;
+    cursor: pointer;
+}
+
+.transperent:hover{
+    background-size: 150%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.transperent span{
+    font-size: 150px;
+    font-weight: bolder;
+}
+
+/*CUBES SECTION*/
+.cubes{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cubes .inner-wrapper > :first-child{
+    padding-bottom: 50px;
+    color: red;
+}
+
+.cubes .inner-wrapper > :last-child{
+    padding-top: 50px;
+    color: red;
+}
+
+.cubes-wrapper{
+    position: relative;
+    height: 360px;
+    padding: 10px;
+    margin-left: 10%;
+}
+
+.cube{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #DCDCDC;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #666666;
+    padding: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cube p{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.cube:hover{
+    width: 200px;
+    height: 200px;
+    z-index: 5;
+}
+
+.cube:hover:after{
+    content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos possimus expedita sapiente vero libero itaque ipsam perspiciatis voluptatem cupiditate fugiat dolorem esse facere laudantium reprehenderit animi, rerum quos, illo voluptas.";
+    width: 100%;
+    overflow: hidden;
+    color: black;
+    font-size: 14px;
+}
+
+.cube:hover p{
+    display: none;
+}
+
+.baseball {
+    top: 0;
+    left: 0;
+    color:#00FF00;
+}
+
+.neptune{
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+    color: #ff00de;
+}
+
+.anchor{
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+    color: aqua;
+}
+
+.skales{
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+    color:darkolivegreen;
+}
+

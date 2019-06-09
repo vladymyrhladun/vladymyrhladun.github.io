@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+    <meta charset="UTF-8">
+    <title>homework3</title>
+     <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="main">
+        <!--REQUIRED TASK SECTION-->
+        <section class="required-task">
+            <div class="inner-wrapper">
+                <div class="img-wrapper">
+                    <img class="first-img" src="https://raw.githubusercontent.com/garevna/js-course/master/images/a-level-ico.png" alt="">
+                    <p>
+                        <span>
+                            Алиса хочет отправить важное сообщение Бобу<br>
+                            Сообщение a = ( a<sub>1</sub>, ..., a<sub>n</sub> ) является последовательностью положительных чисел ( символов )
+
+                        </span>
+        </p>
+    </div>
+    <p>Для сжатия сообщения Алиса хочет использовать <span class="green-color" title="двоичный префиксно - свободный код"> >&nbsp двоичный код Хаффмана</span></p>
+    <p>Напомним, что двоичный код Хаффмана, или двоичный префиксно-свободный код — это функция <i>f</i>,
+        которая сопоставляет каждому символу сообщения двоичные строки (то есть строки,
+        состоящие только из символов «0» и «1») таким образом,
+        что ни для какой пары различных символов a<sub>i</sub> и a<sub>j</sub> строка <i>f</i>( a<sub>i</sub> )
+        не является префиксом <i>f</i>( a<sub>j</sub> ) (и наоборот). Результатом кодирования сообщения a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>n</sub> является конкатенация кодов отдельных символов,
+        то есть строка <i>f</i>( a<sub>1</sub> ) <i>f</i>( a<sub>2</sub> )... <i>f</i>( a<sub>n</sub> )</p>
+    <p>Коды Хаффмана удобны тем, что закодированное сообщение можно легко и однозначно декодировать, если знать код</p>
+    <div class="img-wrapper">
+    <p>
+        <span>Код обычно выбирается таким образом, чтобы минимизировать суммарную длину закодированного сообщения,
+            то есть длину строки <i>f</i>( a<sub>1</sub> ) <i>f</i>( a<sub>2</sub> )... <i>f</i>( a<sub>n</sub> )</span>
+    </p>
+    <img class="second-img" src="https://github.com/garevna/js-course/raw/master/images/a-level-ico.png?raw=true" alt="">
+    </div>
+    <p>Алиса не хочет посылать сообщение целиком, поскольку это слишком рискованно</p>
+    <p>Вместо этого она выбрала несколько частей сообщения и хочет отправить их по отдельности</p>
+    <p>Для каждой выбранной подстроки a<sub>ki</sub>... a<sub>mi</sub> она хочет найти минимальную длину этой подстроки, закодированной по Хаффману</p>
+    <p>Помогите ей с этой задачей</p>
+</div>
+</section>
+
+<!--TRANSPERENT LETTERS SECTION-->
+ <section class="transperent-letters">
+     <div class="inner-wrapper">
+            <h1 class="transperent">
+                <span>A-LEVEL</span>
+             </h1>
+      </div>
+ </section>
+
+ <!--CUBES SECTION-->
+ <section class="cubes">
+     <div class="inner-wrapper">
+         <p><i>Поместите указатель мышки над элементом, чтобы переместить его на передний план</i></p>
+         <div class="cubes-wrapper">
+            <div class="baseball"><p>&#x26BE</p></div>
+            <div class="neptune"><p>&#x2646</p></div>
+            <div class="anchor"><p>&#x2693</p></div>
+            <div class="skales"><p>&#x2696</p></div>
+         </div>
+         <p><i>Элементы вне нормального потока (к которым применен атрибут position:absolute или position:fixed) могут перемещаться на передний/задний план с помощью CSS-атрибута z-index</i></p>
+     </div>
+ </section>
+    </div>
+    </body>
+</html>
+
