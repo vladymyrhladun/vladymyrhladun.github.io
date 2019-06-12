@@ -1,0 +1,184 @@
+
+/*GENERAL*/
+
+body * {
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*CUBES*/
+
+.cubes {
+    min-height: 100vh;
+    position: relative;
+}
+
+.cube {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border: 3px double #ff0017;
+    transition: .3s;
+    background: url("http://4.bp.blogspot.com/-hKEB3p6URTo/VQs3dieb-FI/AAAAAAAABqM/89Gdk3JUE1Q/s1600/Ford%2BMustang%2BShelby%2BGT500%2B1967%2B08.jpg") no-repeat center;
+}
+
+.cube-wrapper {
+    background: none;
+    border: none;
+    top: 20%;
+    left: 20%;
+    cursor: pointer;
+}
+
+.cube-wrapper-one {
+    z-index: 5;
+}
+
+.cube-wrapper-two {
+    z-index: 4;
+    transform: rotate(15deg);
+}
+
+.cube-wrapper-three {
+    z-index: 3;
+    transform: rotate(30deg);
+}
+
+.cube-wrapper-four {
+    z-index: 2;
+    transform: rotate(45deg);
+}
+
+.cube-wrapper:hover .cube-one {
+    height: 200px;
+    width: 200px;
+    top: 100px;
+    left: 100px;
+}
+
+.cube-one {
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.cube-two {
+
+    opacity: .7;
+    z-index: 4;
+}
+
+.cube-three {
+
+    opacity: .5;
+    z-index: 3;
+}
+
+.cube-four {
+
+    opacity: .3;
+    z-index: 2;
+}
+
+.cube-wrapper-two:hover .cube-two {
+    transform: rotate(10deg);
+}
+
+.cube-wrapper-three:hover .cube-three {
+    transform: rotate(10deg);
+}
+
+.cube-wrapper-four:hover .cube-four {
+    transform: rotate(10deg);
+}
+
+/*SIDEBARS*/
+
+.side-bar-common {
+    position: relative;
+    overflow: hidden;
+    width: 5%;
+    transition: .5s;
+    background-color: #464646;
+    min-height: 100vh;
+    border: 2px solid gray;
+}
+
+.side-bar-common:hover {
+    width: 30%;
+}
+
+.side-bar-items-wrapper {
+    position: absolute;
+    left: -200px;
+    transition: 1s;
+    padding: 50px 0 0 50px;
+}
+.side-bar-common:hover .side-bar-items-wrapper {
+    left: 0px;
+}
+
+.side-bar-item {
+    padding-bottom: 20px;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    transition: .2s;
+}
+
+.side-bar-item::before {
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    background-color: #ff0017;
+    border: 1px solid #000000;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
+
+.side-bar-item:hover {
+    background-color: #7fc5ff;
+}
+
+@media (min-width: 1200px) {
+    .second-side-bar{
+        min-height: 10vh;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .second-side-bar:hover {
+        width: 100%;
+    }
+
+    .second-side-bar .side-bar-items-wrapper {
+        padding: 25px;
+        width: 800px;
+        margin: 0 auto;
+        position: static;
+    }
+
+    .second-side-bar .side-bar-item {
+        display: inline-block;
+    }
+
+    .second-side-bar .side-bar-item::before {
+        display: none;
+    }
+
+    .wrapper {
+        min-height: 100vh;
+    }
+}
