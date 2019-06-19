@@ -1,0 +1,19 @@
+img {
+    position: absolute;
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    img{
+        width: 1000px;
+    }
+}
+@media (max-width: 801px){
+    .photo3{
+        width: 0;
+    }
+}
+@media (max-width: 501px) {
+    .photo2 {
+        width: 0;
+    }
+}
