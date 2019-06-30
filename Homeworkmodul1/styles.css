@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 10px;
+    background-color: #FFFFFF;
+    color: #909090;
+}
+body * { box-sizing: border-box }
+img {
+    max-width: 100%;
+    width: auto;
+
+}
+.wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+form p {
+    margin: 0;
+}
+.logo{
+    font-size: 0;
+}
+
+header{
+    margin: 24px 30px 30px;
+}
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+form .search{
+    height: 40px;
+    width: 390px;
+    background-color: #f3f3f3;
+    border: 1px solid #e5e5e5;
+    font-size: 1.6em;
+    padding-left: 10px;
+    vertical-align:middle;
+}
+input::-webkit-input-placeholder{
+    color: #c7c5c5;
+}
+button{
+    border: none;
+    background: none;
+    font-size: 30px;
+    color: #c7c5c5;
+    vertical-align:middle;
+}
+.banner{
+    background-color: #2f3943;
+    margin-bottom: 80px;
+}
+.countainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.text h1{
+    font-size: 2.4em;
+    color: #5094f2;
+    margin-bottom: 0;
+}
+.text p{
+    font-size: 1.6em;
+    margin: 0;
+}
+.round_elements{
+    max-width: 900px;
+
+}
+.round{
+    height: 186px;
+    width: 186px;
+    border-radius: 50%;
+    font-size: 100px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.red{
+    background-color: #d94748;
+}
+.blue{
+    background-color: #5094f2;
+}
+.yellow{
+
+    background-color: #ebbb11;
+}
+.text{
+    text-align: center;
+    max-width: 286px;
+}
+.shopping{
+    padding-bottom: 60px;
+}
+.shopping h1{
+    font-size: 3.6em;
+    color: #6f7173;
+    padding-left: 35px;
+    margin: 0;
+}
+.shopping_image{
+    font-size: 200px;
+    color: #4364a1;
+    float: left;
+    width: 50%;
+    height: 400px;
+    padding-top: 60px;
+}
+.shopping_image a{
+    padding-left: 70px;
+}
+.shopping_text h2{
+    font-weight: normal;
+    margin: 0;
+    font-size: 3em;
+    color: #6f7173;
+}
+.shopping_text p{
+    font-weight: normal;
+    font-size: 1.6em;
+}
+footer{
+    border-top: 1px solid #e5e5e5;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 30px 0 40px 0;
+}
+footer p{
+    margin: 0
+}
+@media (max-width: 769px) {
+    header {
+        margin: 22px 30px 23px;
+    }
+
+    form .search {
+        width: 200px;
+    }
+
+    .banner {
+        margin-bottom: 32px;
+    }
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    .countainer {
+        flex-direction: column;
+        margin-bottom: 0;
+
+    }
+    .round{
+        float: left;
+    }
+    .text p {
+        font-size: 2em;}
+
+    .text {
+        text-align: left;
+        max-width: 360px;
+        margin-left: 170px;
+    }
+    .round{
+        height: 136px;
+        width: 136px;
+        font-size: 80px;}
+    .round_elements{
+        padding: 1.8em 0;
+        border-bottom: 1px solid #CCCCCC;
+    }
+    .shopping h1{
+        padding-left: 0;
+        text-align: center;
+        margin: 42px 0 24px;
+    }
+    .shopping_image {
+        text-align: center;
+        float: none;
+        width: auto;
+        height: auto;
+        padding-top: 0;
+        font-size: 160px;
+    }
+    .shopping_image a {
+        padding-left: 0;
+    }
+    .shopping_text h2 {
+        padding-bottom: 30px;
+        font-size: 3.6em;
+    }
+    .shopping_text p {
+        line-height: 34px;
+        margin: 0;
+    }
+    footer {
+        font-size: 1.6em;
+    }
+}
+@media (max-width: 580px){
+    header .wrapper {
+        display: block;
+        padding-left: 30%;
+    }
+    .banner {
+        margin-bottom: 0;
+    }
+    .wrapper {
+        padding: 0 5px;
+    }
+    .round{
+        height: 100px;
+        width: 100px;
+        font-size: 60px;}
+    .text {
+        margin-left: 112px;}
+    .shopping h1{
+        padding-left: 0;
+        margin: 10px 0 10px;
+        font-size: 3.1em;
+    }
+    .shopping_image{
+        font-size: 130px;
+    }
+    .shopping_text h2 {
+        padding-bottom: 10px;
+        font-size: 3em;
+    }
+    .shopping_text p {
+        line-height: 30px;}
+
+}
+@media (max-width: 517px) {
+    .shopping_text p {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .shopping {
+        padding-bottom: 40px;
+    }
+
+    footer {
+        font-size: 1.2em;
+        padding: 5px 0 5px;
+    }
+}
+@media (max-width: 440px){
+    header .wrapper {
+        padding-left: 0;}
+
+}
